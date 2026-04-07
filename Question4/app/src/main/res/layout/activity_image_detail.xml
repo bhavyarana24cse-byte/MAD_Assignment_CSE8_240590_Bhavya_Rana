@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/imageViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="#E0E0E0"
+            android:contentDescription="Selected Image"/>
+
+        <!-- Image Name -->
+        <TextView
+            android:id="@+id/tvImageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="16sp"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Image Path -->
+        <TextView
+            android:id="@+id/tvImagePath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Path: "
+            android:textSize="16sp"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Image Size -->
+        <TextView
+            android:id="@+id/tvImageSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size: "
+            android:textSize="16sp"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Image Date Taken -->
+        <TextView
+            android:id="@+id/tvImageDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Taken: "
+            android:textSize="16sp"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/btnDeleteImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗑 Delete Image"
+            android:backgroundTint="#E57373"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
